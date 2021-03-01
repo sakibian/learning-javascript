@@ -511,246 +511,242 @@ Multi line comments
 
 // IF ELSE
 
-// const color = 'yellow';
+const color = 'yellow';
 
-// if(color === 'red') {
-//   console.log('Color is RED');
-// } else if(color === 'blue') {
-//   console.log('Color is BLUE');
-// } else {
-//   console.log('Color is not RED or BLUE');
-// }
+if(color === 'red') {
+  console.log('Color is RED');
+} else if(color === 'blue') {
+  console.log('Color is BLUE');
+} else {
+  console.log('Color is not RED or BLUE');
+}
 
 // LOGICAL OPERATORS
-// const name = 'Sakib';
-// const age = 70;
+const name = 'Sakib';
+const age = 70;
 
 // AND &&
-// if(age > 0 && age < 12) {
-//   console.log(`${name} is a CHILD`);
-// } else if (age >=13 && age <= 19) {
-//   console.log(`${name} is a TEENAGER`);
-// } else {
-//   console.log(`${name} is a ADULT PERSON`);
-// }
+if(age > 0 && age < 12) {
+  console.log(`${name} is a CHILD`);
+} else if (age >=13 && age <= 19) {
+  console.log(`${name} is a TEENAGER`);
+} else {
+  console.log(`${name} is a ADULT PERSON`);
+}
 
 // OR ||
 
-// if(age < 16 || age > 65) {
-//   console.log(`${name} can not run in race`);
-// } else {
-//   console.log(`${name} is a registered for the race`);
-// }
+if(age < 16 || age > 65) {
+  console.log(`${name} can not run in race`);
+} else {
+  console.log(`${name} is a registered for the race`);
+}
 
 // // TERNARY OPERATORS
-// console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
 
 // // WITHOUT BRACKETS
 
-// if(id === 100)
-//   console.log('CORRECT');
-// else 
-//   console.log('INCORRECT');
+if(id === 100)
+  console.log('CORRECT');
+else 
+  console.log('INCORRECT');
 
 
 // SWITCHES
 
-// const color = 'yellow';
+const color = 'yellow';
 
-// switch(color) {
-//   case 'red':
-//     console.log('Color is RED');
-//     break;
-//   case 'blue':
-//     console.log('Color is BLUE');
-//     break;
-//   default:
-//     console.log('Color is not RED or BLUE');
-//     break;
-// }
+switch(color) {
+  case 'red':
+    console.log('Color is RED');
+    break;
+  case 'blue':
+    console.log('Color is BLUE');
+    break;
+  default:
+    console.log('Color is not RED or BLUE');
+    break;
+}
 
-// let day;
+let day;
 
-// switch(new Date().getDay()){
-//   case 0:
-//     day = 'Sunday';
-//     break;
-//   case 1:
-//     day = 'Monday';
-//     break;
-//   case 2:
-//     day = 'Tuesday';
-//     break;
-//   case 3:
-//     day = 'Wednesday';
-//     break;
-//   case 4:
-//     day = 'Thursday';
-//     break;
-//   case 5:
-//     day = 'Friday';
-//     break;
-//   case 6:
-//     day = 'Saturday';
-//     break;
-// }
+switch(new Date().getDay()){
+  case 0:
+    day = 'Sunday';
+    break;
+  case 1:
+    day = 'Monday';
+    break;
+  case 2:
+    day = 'Tuesday';
+    break;
+  case 3:
+    day = 'Wednesday';
+    break;
+  case 4:
+    day = 'Thursday';
+    break;
+  case 5:
+    day = 'Friday';
+    break;
+  case 6:
+    day = 'Saturday';
+    break;
+}
 
-// console.log(`Today is ${day}`);
-
-
-
+console.log(`Today is ${day}`);
 
 
 // Function Declaration
 
-// function greet(firstName = 'John', lastName = 'Doe'){
-//   // if(typeof firstName === 'undefined'){firstName = 'John'} - ES5
-//   // if(typeof lastName === 'undefined'){lastName = 'Doe'} - ES5
-//   // console.log('Hello');
-//   return 'Hello ' + firstName + ' ' + lastName;
-// }
-
+function greet(firstName = 'John', lastName = 'Doe'){
+  // if(typeof firstName === 'undefined'){firstName = 'John'} - ES5
+  // if(typeof lastName === 'undefined'){lastName = 'Doe'} - ES5
+  // console.log('Hello');
+  return 'Hello ' + firstName + ' ' + lastName;
+}
 
 // // console.log(greet());
 
 // // Function expression
 
-// const square = function(x = 3){
-//   return x*x;
-// };
+const square = function(x = 3){
+  return x*x;
+};
 
 // // console.log(square());
 
 // // IMMIDIATELY INVOKABLE FUNCTIONS -- IIFEs
 
-// // (function(){
-// //   console.log('IIFE Ran..');
-// // })();
+(function(){
+  console.log('IIFE Ran..');
+})();
 
-// // (function(name){
-// //   console.log('Hello '+ name);
-// // })('Brad');
+(function(name){
+  console.log('Hello '+ name);
+})('Brad');
 
 // // PROPERTY METHODS
 
-// const todo = {
-//   add: function(){
-//     console.log('Add todo..');
-//   },
-//   edit: function(id){
-//     console.log(`Edit todo ${id}`);
-//   }
+const todo = {
+  add: function(){
+    console.log('Add todo..');
+  },
+  edit: function(id){
+    console.log(`Edit todo ${id}`);
+  }
 // }
 
-// todo.delete = function(){
-//   console.log('Delete todo...');
-// }
+todo.delete = function(){
+  console.log('Delete todo...');
+}
 
 
-// todo.add();
-// todo.edit(22);
-// todo.delete();
+todo.add();
+todo.edit(22);
+todo.delete();
 
 
 
 // General Loops
 
 // FOR LOOPS
-// for(let i = 0; i < 10; i++){
-//   // i = i + 1 -- i++
-//   //console.log('Number ' + i);
-//   if(i === 2){
-//     console.log('Number 2 is not my favourite number');
-//     continue;
-//   }
+for(let i = 0; i < 10; i++){
+  // i = i + 1 -- i++
+  //console.log('Number ' + i);
+  if(i === 2){
+    console.log('Number 2 is not my favourite number');
+    continue;
+  }
 
-//   if(i === 5){
-//     console.log('Stopped the loop');
-//     break;
-//   }
+  if(i === 5){
+    console.log('Stopped the loop');
+    break;
+  }
 
-//   console.log('Number ' + i);
-// }
+  console.log('Number ' + i);
+}
 
 // WHILE LOOPS
-// let i = 0;
+let i = 0;
 
-// while(i < 10){
-//   console.log('Number ' + i);
-//   i++;
-// }
+while(i < 10){
+  console.log('Number ' + i);
+  i++;
+}
 
 // DO WHILE LOOPS (Always Gonna Run)
 
-// let i = 100;
+let i = 100;
 
-// do {
-//   console.log('Number ' + i);
-//   i++;
-// }
+do {
+  console.log('Number ' + i);
+  i++;
+}
 
-// while(i < 10);
+while(i < 10);
 
 //LOOP THROUGH ARRAY
-// const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
-// cars[1];
+const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+cars[1];
 
-// for(let i = 0; i < cars.length; i++){
-//   console.log(cars[i]);
-// }
+for(let i = 0; i < cars.length; i++){
+  console.log(cars[i]);
+}
 
 //WHILE LOOP
 
-// let i = 0;
+let i = 0;
 
-// while(i < cars.length){
-//   console.log('While loop running on ' + cars[i]);
-//   i++;
-// }
+while(i < cars.length){
+  console.log('While loop running on ' + cars[i]);
+  i++;
+}
 
 // DO WHILE LOOP
 
-// let i = 0;
+let i = 0;
 
-// do{
-//   console.log('Do loop running on ' + cars[i]);
-//   i++;
-// }
+do{
+  console.log('Do loop running on ' + cars[i]);
+  i++;
+}
 
-// while(i < cars.length);
+while(i < cars.length);
 
 // FOREACH ARRAY LOOP
-// cars.forEach(function(car, index, array){
-//   console.log(`${index} : ${car}`);
-//   console.log(array);
-// });
+cars.forEach(function(car, index, array){
+  console.log(`${index} : ${car}`);
+  console.log(array);
+});
 
 // MAP
 
-// const users = [
-//   {id: 1, Name: 'John'},
-//   {id: 2, Name: 'Sakib'},
-//   {id: 3, Name: 'Sadid'},
-//   {id: 4, Name: 'Nasif'}
-// ];
+const users = [
+  {id: 1, Name: 'John'},
+  {id: 2, Name: 'Sakib'},
+  {id: 3, Name: 'Sadid'},
+  {id: 4, Name: 'Nasif'}
+];
 
-// const ids = users.map(function(user){
-//   return user.id;
-// });
+const ids = users.map(function(user){
+  return user.id;
+});
 
 // console.log(ids);
 
 // FOR IN LOOP
 
-// const user = {
-//   firstName: 'John',
-//   lastName: 'Doe',
-//   age: 40
-// }
+const user = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 40
+}
 
-// for(let x in user){
-//   console.log(`${x} : ${user[x]}`);
-// }
+for(let x in user){
+  console.log(`${x} : ${user[x]}`);
+}
 
 
 
@@ -760,172 +756,315 @@ Multi line comments
 // window.console.log(123);
 
 // ALERT
-// window.alert('Hello World!');
-// alert('Hello World!');
+window.alert('Hello World!');
+alert('Hello World!');
 
 // Prompt
-// const input = prompt();
-// alert(input);
+const input = prompt();
+alert(input);
 
 // Confirm
-// if(confirm('Are you sure?')){
-//   console.log('YES');
-// }else {
-//   console.log('NO');
-// }
+if(confirm('Are you sure?')){
+  console.log('YES');
+}else {
+  console.log('NO');
+}
 
 // Properties
 
-// let val;
+let val;
 
 // Outer height and width
-// val = window.outerHeight;
-// val = window.outerWidth;
+val = window.outerHeight;
+val = window.outerWidth;
 
 // Inner height and width
-// val = window.innerHeight;
-// val = window.innerWidth;
+val = window.innerHeight;
+val = window.innerWidth;
 
 // Scroll Points
-// val = window.scrollY;
-// val = window.scrollX;
+val = window.scrollY;
+val = window.scrollX;
 
 // Location Object
-// val = window.location;
-// val = window.location.hostname;
-// val = window.location.port;
-// val = window.location.href;
-// val = window.location.search;
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.href;
+val = window.location.search;
 
 // Redirect
-// window.location.href = 'http://google.com';
-// // Reload
-// window.location.reload();
+window.location.href = 'http://google.com';
+// Reload
+window.location.reload();
 
 // History Object
-// window.history.go(-0);
-// val = window.history.length;
+window.history.go(-0);
+val = window.history.length;
 
 // Navigator Object
-// val = window.navigator;
-// val = window.navigator.appName;
-// val = window.navigator.appVersion;
-// val = window.navigator.userAgent;
-// val = window.navigator.geolocation;
-// val = window.navigator.platform;
-// val = window.navigator.vendor;
-// val = window.navigator.language;
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.userAgent;
+val = window.navigator.geolocation;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+val = window.navigator.language;
 
 // console.log(val);
-
 
 // Global Scope
 
-// var a = 1;
-// let b = 2;
-// const c = 3;
+var a = 1;
+let b = 2;
+const c = 3;
 
-// function test(){
-//   var a = 4;
-//   let b = 5;
-//   const c = 6;
-//   console.log('Function Scope: ', a, b, c);
-// }
+function test(){
+  var a = 4;
+  let b = 5;
+  const c = 6;
+  console.log('Function Scope: ', a, b, c);
+}
 
-// test();
+test();
 
 // Block Scope
 
-// if(true){
-//   //Block Scope
-//   var a = 4;
-//   let b = 5;
-//   const c = 6;
-//   console.log('If Scope: ', a, b, c);
-// }
+if(true){
+  //Block Scope
+  var a = 4;
+  let b = 5;
+  const c = 6;
+  console.log('If Scope: ', a, b, c);
+}
 
-// for(var a = 0; a < 10; a++){
-//   console.log(`Loop: ${a}`);
-// }
+for(var a = 0; a < 10; a++){
+  console.log(`Loop: ${a}`);
+}
 
-// console.log('Global Scope: ', a, b, c);
+console.log('Global Scope: ', a, b, c);
 
 
 
-//DOM Manipulation
-// let val;
+// DOM Manipulation
+let val;
 
-// val = document;
-// val = document.all;
-// val = document.all[2];
-// val = document.all.length;
-// val = document.head;
-// val = document.body;
-// val = document.doctype;
-// val = document.domain;
-// val = document.URL;
-// val = document.characterSet;
-// val = document.contentType;
+val = document;
+val = document.all;
+val = document.all[2];
+val = document.all.length;
+val = document.head;
+val = document.body;
+val = document.doctype;
+val = document.domain;
+val = document.URL;
+val = document.characterSet;
+val = document.contentType;
 
-// val = document.forms;
-// val = document.forms[0].id;
-// val = document.forms[0].method;
-// val = document.forms[0].action;
+val = document.forms;
+val = document.forms[0].id;
+val = document.forms[0].method;
+val = document.forms[0].action;
 
-// val = document.links;
-// val = document.links[0].id;
-// val = document.links[0].className;
-// val = document.links[0].classList;
+val = document.links;
+val = document.links[0].id;
+val = document.links[0].className;
+val = document.links[0].classList;
 
-// val = document.images;
-// val = document.scripts[2].getAttribute('src');
+val = document.images;
+val = document.scripts[2].getAttribute('src');
 
-// let scripts = document.scripts;
+let scripts = document.scripts;
 
-// let scriptsArr = Array.from(scripts);
+let scriptsArr = Array.from(scripts);
 
-// scriptsArr.forEach(function(script){
-//   console.log(script.getAttribute('src'));
-// });
+scriptsArr.forEach(function(script){
+  console.log(script.getAttribute('src'));
+});
 
 // console.log(val);
 
+document.getElementById()
+console.log(document.getElementById('task-title'));
 
+// Get thing from the element
 
-// document.getElementById()
-// console.log(document.getElementById('task-title'));
+console.log(document.getElementById('task-title').id);
+console.log(document.getElementById('task-title').className);
 
-//Get thing from the element
-
-// console.log(document.getElementById('task-title').id);
-// console.log(document.getElementById('task-title').className);
-
-// const taskTitle = document.getElementById('task-title');
+const taskTitle = document.getElementById('task-title');
 
 // Change Styling
-// taskTitle.style.background = '#333';
-// taskTitle.style.color = '#fff';
-// taskTitle.style.padding = '10px';
-// taskTitle.style.display = 'none';
+taskTitle.style.background = '#333';
+taskTitle.style.color = '#fff';
+taskTitle.style.padding = '10px';
+taskTitle.style.display = 'none';
 
 // Change Content
-// taskTitle.textContent = 'Task List';
-// taskTitle.innerText = 'My List';
-// taskTitle.innerHTML = '<span style="color:red;">My List</span>';
+taskTitle.textContent = 'Task List';
+taskTitle.innerText = 'My List';
+taskTitle.innerHTML = '<span style="color:red;">My List</span>';
 
-// document.querySelector();
-// console.log(document.querySelector('#task-title'));
-// console.log(document.querySelector('.card-title'));
-// console.log(document.querySelector('h5'));
+document.querySelector();
+console.log(document.querySelector('#task-title'));
+console.log(document.querySelector('.card-title'));
+console.log(document.querySelector('h5'));
 
-// //DOM LIST
-// document.querySelector('li').style.color = 'red';
-// document.querySelector('ul li').style.color = 'blue';
-// document.querySelector('li:last-child').style.color = 'red';
-// document.querySelector('li:nth-child(3)').style.color = 'yellow';
-// document.querySelector('li:nth-child(4)').textContent = 'Hello World!';
-// document.querySelector('li:nth-child(odd)').style.background = '#ccc';
-// document.querySelector('li:nth-child(even)').style.background = '#f4f4f4';
+//DOM LIST
+document.querySelector('li').style.color = 'red';
+document.querySelector('ul li').style.color = 'blue';
+document.querySelector('li:last-child').style.color = 'red';
+document.querySelector('li:nth-child(3)').style.color = 'yellow';
+document.querySelector('li:nth-child(4)').textContent = 'Hello World!';
+document.querySelector('li:nth-child(odd)').style.background = '#ccc';
+document.querySelector('li:nth-child(even)').style.background = '#f4f4f4';
+
+document.getElementsByClassName();
+
+const items = document.getElementsByClassName('collection-item');
+console.log(items);
+console.log(items[0]);
+console.log(items[1]);
+items[0].style.color = 'red';
+items[3].textContent = 'Hello ';
+
+const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
+console.log(listItems);
 
 
+document.getElementsByTagName();
+let lis = document.getElementsByTagName('li');
+console.log(lis);
+console.log(lis[0]);
+lis[0].style.color = 'red';
+lis[3].textContent = 'Hello ';
 
+//Convert HTML Collection into array
+lis = Array.from(lis);
+
+lis.reverse();
+
+lis.forEach(function(li, index) {
+  console.log(li.className);
+  li.textContent = `${index}: Hello`;
+});
+
+console.log(lis);
+
+
+document.querySelectorAll();
+
+const items = document.querySelectorAll('ul.collection li.collection-item');
+
+items.forEach(function(item, index) {
+  item.textContent = `${index}: Hello`;
+});
+
+const liOdd = document.querySelectorAll('li:nth-child(odd)');
+const liEven = document.querySelectorAll('li:nth-child(even)');
+
+liOdd.forEach(function(li) {
+  li.style.background = '#cc';
+});
+
+for(let i = 0; i < liEven.length; i++){
+  liEven[i].style.background = '#f4f4f4';
+}
+
+// console.log(liOdd);
+// console.log(liEven);
+
+// console.log(items);
+
+
+// Traversing The DOM
+let val
+
+const list = document.querySelector('ul.collection');
+const listItem = document.querySelector('li.collection-item:first-child');
+
+val = listItem;
+val = list;
+
+// Get child nodes
+val = list.childNodes; // Count with line breaks (Text Nodes)
+val = list.childNodes[0];
+val = list.childNodes[0].nodeName;
+val = list.childNodes[1].nodeType;
+
+// 1 - Element
+// 2 - Attribute (deprecated)
+// 3 - Text Node
+// 8 - Comment
+// 9 - Document itself
+// 10 - Doctype
+
+
+// Get children element nodes
+val = list.children;
+val = list.children[1];
+list.children[1].textContent = 'Hello';
+
+// Children of children
+list.children[3].children[0].id = 'test-link';
+val = list.children[3].children[0];
+
+// First Child
+val = list.firstChild;
+val = list.firstElementChild;
+
+// Last Child
+val = list.lastChild;
+val = list.lastElementChild;
+
+// Count Child Element
+val = list.childElementCount;
+
+// Get parent node
+val = list.parentNode;
+val = list.parentElement;
+val = list.parentElement.parentElement;
+
+// Get next siblings
+val = listItem.nextSibling; // Give node
+val = listItem.nextElementSibling; // next siblings
+val = listItem.nextElementSibling.nextElementSibling; // next to next siblings
+
+// Get prev siblings
+val = listItem.previousSibling; // prev node
+val = listItem.previousElementSibling; // prev siblings
+
+console.log(val);
+
+
+// Creating Elements
+
+const li = document.createElement('li');
+
+// Add Class
+li.className = 'collection-item';
+
+// Add Id
+li.id = 'new-item';
+
+// Add Attribute
+li.setAttribute('title', 'New Item');
+
+// Create Text Node and Append
+li.appendChild(document.createTextNode('Hello World'));
+
+// Create new link element
+const link = document.createElement('a');
+// add class
+link.className = 'delete-item secondary-content';
+// add icon html
+link.innerHTML = '<i class="fa fa-remove"></i>';
+// append link into li
+li.appendChild(link);
+
+
+// Append li as child to ul
+document.querySelector('ul.collection').appendChild(li);
+
+console.log(li);
