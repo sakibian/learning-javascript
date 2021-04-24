@@ -3,20 +3,19 @@
 
 // Initialize variables.
 const defaultResult = 0;
-let currentResult;
+// Global variable
+let currentResult = defaultResult;
 
 // + Add function
-function add(num1, num2) {
-  const result = num1 + num2;
-  return result;
+function add() {
+  // Global variable initialize
+  currentResult = currentResult + parseInt(userInput.value); // another way to convert + +userInput.value
+  // Output Results
+  outputResult(currentResult, '');
 }
 
+addBtn.addEventListener('click', add);
 
-// Calling the function
-currentResult = add(1, 2);
 
-let calculationDescription = `(${defaultResult} + 10) * 3 / 2 - 1`;
-
-outputResult(currentResult, calculationDescription);
 
 
