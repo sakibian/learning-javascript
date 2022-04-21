@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" cont ent="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="primer.css">
+    <link rel="stylesheet" href="blackjack.css">
+    <link rel="stylesheet" href="index.css">
+    <title>JavaScript Learning</title>
+</head>
+<body class="color-bg-accent-emphasis">
+    <div class="Header color-bg-overlays">
+        <!-- Text item -->
+        <div class="Header-item">
+          <a href="index.html" class="header-link">Home</a>
+        </div>
+      
+        <!-- Form item  -->
+        <div class="Header-item">
+            <a href="blackjack.html" class="header-link">BlackJack Game</a>
+        </div>
+      
+        <!-- Image item  -->
+        <div class="Header-item">
+            <a href="practice.html" class="header-link">Practices</a>
+        </div>
+      </div>
+    <!-- People counter -->
+    <p id="welcomeEl"></p>
+    <h1>People entered</h1>
+    <h2 id="count-el">0</h2>
+    <button id="increment-btn" onclick="save()">Save</button>
+    <button id="increment-btn" onclick="increment()">INCREMENT</button>
+    <button id="increment-btn" onclick="reset()">RESET</button>
+    <p id="save-el">Previous entries: </p>
+    <!-- Shoe -->
+    <img src="shoe.jpg" alt="Shoe Nike" width="200px"><br>
+    <p>Nike Shoe</p>
+    <button id="increment-btn" onclick="purchase()">Purchase: $199</button>
+    <p id="error"></p>
+    <!-- Calculator -->
+    <br>
+    <br>
+    <span id="num1-el"></span>
+    <span id="num2-el"></span>
+    <br>
+    <br>
+    <button id="increment-btn" onclick="add()">Add</button>
+    <button id="increment-btn" onclick="substract()">Substract</button>
+    <button id="increment-btn" onclick="divide()">Divide</button>
+    <button id="increment-btn" onclick="multiply()">Multiply</button>
+    <br>
+    <span id="sum-el"></span>
+    <script src="index.js"></script>
+    <!-- <script src="index2.js"></script> -->
+</body>
+</html>

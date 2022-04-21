@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack Game</title>
+    <link rel="stylesheet" href="primer.css">
+    <link rel="stylesheet" href="blackjack.css">
+</head>
+<body class="color-bg-open-emphasis">
+    <div class="Header">
+        <!-- Text item -->
+        <div class="Header-item">
+          <a href="index.html" class="header-link">Home</a>
+        </div>
+      
+        <!-- Form item  -->
+        <div class="Header-item">
+            <a href="blackjack.html" class="header-link">BlackJack Game</a>
+        </div>
+      
+        <!-- Image item  -->
+        <div class="Header-item">
+            <a href="practice.html" class="header-link">Practices</a>
+        </div>
+      </div>
+    <h1>Blackjack</h1>
+    <p id="message-el">Want to play a round?</p>
+    <p id="cards-el">Cards: </p>
+    <p id="sum-el">Sum: </p>
+    <p id="greeting-el"></p>
+    <button class="btn btn-start-game" onclick="startGame()">START GAME</button>
+    <button class="btn btn-start-game" onclick="newCard()">NEW CARD</button>
+    <script src="blackjack.js"></script>
+</body>
+</html>
